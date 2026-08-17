@@ -34,6 +34,8 @@ Work the piles in this order — biggest unblocked first, never trickle across a
 
 **Attestation is per-part with `CODE@sha file:line` evidence — never mass-automated.** Some rows are parity-inherited shells that show built parts they do not have; blanket backfill re-inflates them. Attest what you have read in source, nothing more.
 
+**A blocked lane must say so, within one wake.** If an operation cannot proceed — permission prompt, missing credential, refused tool — the lane posts a bus row naming the exact blocked operation before doing anything else. Silence is forbidden: on 17 Aug all five lanes stalled on permission prompts for ~3 hours while the queue read as merely "not moving", and re-issuing orders could never have fixed it. The overseer treats two hours of lane silence as blocked and escalates. Operations with no route-around become owner config items, not repeated retries.
+
 **`critical` severity means verified-true-right-now and blocking.** Anything else is `high`. Stale critical rows hide real P0s — a real one sat unseen for 11 days behind ~27 stale rows.
 
 Report movement as counts of `final_test_passed` and verified `product_parts`, not `readiness_pct` alone.
