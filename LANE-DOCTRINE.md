@@ -8,7 +8,7 @@
 |---|---|---|
 | **Owner** | Phil | Sets direction. Only he approves spend or scope changes. |
 | **Overseer** | session `claude/lane-live-data-updates-jkb448` (this repo) | Audits hourly, keeps this doctrine + `LOCAL-CLAUDE-PASTE.md` current, reports blockers to Phil. |
-| **Coordinator** | "Pharoah product estate sweep" session, woken hourly by trigger `pharoah-estate-completion-autopilot` (:20 UTC) | Drives the queue, supervises lanes via `lane_handoffs` + poke triggers, maintains the LEDGER row. |
+| **Coordinator** | "Pharoah product estate sweep" session, woken hourly by trigger `pharoah-estate-autopilot-v2` (:20 UTC) | Drives the queue, supervises lanes via `lane_handoffs` + poke triggers, maintains the LEDGER row. |
 | **Worker lanes** | `pharoah-lane-*` sessions | Execute queue items, post evidence to the bus. |
 | **Bus** | `lane_handoffs` table, Supabase project `ofcjggvruhwhaqthdwxa` | The only channel of record between lanes. |
 
@@ -29,6 +29,12 @@ Work the piles in this order — biggest unblocked first, never trickle across a
 1. **Live but untested** (40 at 13:32Z) — already serving 2xx, only missing `final_test_passed`. No owner, no deploy, no credentials. Fan out wide; this is always the fastest available movement.
 2. **Built but undeployed** (15 built ≥80% with no `deploy_url`) — one deploy each. Prepare them deploy-ready; never attempt credentialed or paid deploys. Connecting Cloudflare Workers Builds converts this pile from manual to automatic and is the highest-leverage owner action on the estate.
 3. **Everything else** — partial builds, register defects, listing prep.
+
+**Products with no web surface by design** (ops, engine, CLI, local scripts) are not URL gaps. A NULL `deploy_url` is correct for them and they must never be counted as missing wiring or have a URL invented. Measure them by source attestation instead.
+
+**Attestation is per-part with `CODE@sha file:line` evidence — never mass-automated.** Some rows are parity-inherited shells that show built parts they do not have; blanket backfill re-inflates them. Attest what you have read in source, nothing more.
+
+**`critical` severity means verified-true-right-now and blocking.** Anything else is `high`. Stale critical rows hide real P0s — a real one sat unseen for 11 days behind ~27 stale rows.
 
 Report movement as counts of `final_test_passed` and verified `product_parts`, not `readiness_pct` alone.
 
