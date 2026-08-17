@@ -16,6 +16,22 @@
 
 **Pharoah venture to 100% first** — the register slice `cluster = 'pharoah'` plus Pharoah-owned rows (costa, forges, property/sourcing, pharoah-b2b-intelligence). AMAYA/attoh work happens only when the entire Pharoah queue is blocked, never at its expense. GhostWire is never touched by estate lanes.
 
+### The active denominator (owner decision, 17 Aug 2026)
+
+Estate progress is measured over **`cluster = 'pharoah' AND stage NOT IN ('excluded','spec')`** — 85 active products as of 13:32Z. Phil de-scoped 14 rows that had no `source_repo`, no `source_path` and no `deploy_url`: nothing existed to wire, and counting them made 100% mathematically unreachable. Rows are preserved with a dated note and revive by setting `stage` back and naming a source repo.
+
+Lanes must not touch de-scoped rows, must not reintroduce them into counts, and must **flag** (never guess at) any future row that is empty on all three fields.
+
+### Order of attack
+
+Work the piles in this order — biggest unblocked first, never trickle across all three:
+
+1. **Live but untested** (40 at 13:32Z) — already serving 2xx, only missing `final_test_passed`. No owner, no deploy, no credentials. Fan out wide; this is always the fastest available movement.
+2. **Built but undeployed** (15 built ≥80% with no `deploy_url`) — one deploy each. Prepare them deploy-ready; never attempt credentialed or paid deploys. Connecting Cloudflare Workers Builds converts this pile from manual to automatic and is the highest-leverage owner action on the estate.
+3. **Everything else** — partial builds, register defects, listing prep.
+
+Report movement as counts of `final_test_passed` and verified `product_parts`, not `readiness_pct` alone.
+
 ## Live-data rules
 
 Session memory is stale the moment a sibling lane pushes, probes, or writes. Therefore:
