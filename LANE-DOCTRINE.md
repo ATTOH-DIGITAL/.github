@@ -1,4 +1,29 @@
-# Estate Lane Doctrine — Pharoah First, Live Data Only
+# Pharoah Technology — Standing Build Doctrine
+
+**THE BUILD METHOD IS LOCKED IN (owner directive, Phil, 18 Aug 2026).** Pharoah Technology builds by
+**self-healing build lanes**, defined in [`ESTATE-100-BUILD-LANES.md`](./ESTATE-100-BUILD-LANES.md).
+This is not a one-off procedure for one push — it is how this company builds software from now on.
+
+**The method, in one paragraph:** work is derived from live data every round, never from memory. It is
+fanned out to parallel build lanes. Every defect a lane finds — a broken product, a wrong register
+value, a failing test, a lie in the data, a thing that needs building — is posted as a new work item
+and goes **straight back into the next round**. An adversarial verification pass tries to refute the
+round's claims and reverts anything that cannot survive it. Items needing the owner or a credential go
+to a blocked list that is **retried every round** so the loop never stalls and picks up clearances
+automatically. The loop runs until **two consecutive rounds produce zero new work and zero failed
+verifications**, measured against a written completion contract — not against anyone's opinion.
+
+**Non-negotiables:** live data only · evidence or it did not happen · no guessing, no assuming · never
+mass-attest · a 200 is not a pass · honest failure beats a false pass · commit and push every
+increment · blocked lanes must say what blocked them, silence is forbidden · no spend without the
+owner.
+
+Any new programme, product, or push in this estate starts by loading `ESTATE-100-BUILD-LANES.md` and
+running it. The sections below are the operating detail that method runs on.
+
+---
+
+## Estate Lane Doctrine — Pharoah First, Live Data Only
 
 **Owner directive (Phil, 17 Aug 2026).** Applies to every Claude lane working this estate: the hourly coordinator, every worker lane it spawns, the overseer, and any local Claude Code session doing estate work.
 
