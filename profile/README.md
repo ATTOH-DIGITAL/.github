@@ -4,7 +4,9 @@
 
 ### The parent org — every venture, one place
 
-**97 repos across 5 ventures.** If you're new here (coder, partner, or reviewing the estate): this page is the map. Full repo-by-repo detail with GitHub topics on every repo (`venture-*` / `type-*` / `status-*`, filterable via `topic:venture-pharoah-tech` etc. in org search) lives in the internal audit catalogue — ask for access if you don't have it.
+**111 repos across 5 ventures.** If you're new here (coder, partner, or reviewing the estate): this page is the map. Full repo-by-repo detail with GitHub topics on every repo (`venture-*` / `type-*` / `status-*`, filterable via `topic:venture-pharoah-tech` etc. in org search) lives in the internal audit catalogue — ask for access if you don't have it.
+
+<sub>Counts and links below verified against live GitHub topics and the product register on <strong>20 Aug 2026</strong>.</sub>
 
 </div>
 
@@ -14,11 +16,12 @@
 
 | Venture | Repos | What it is | Start here |
 |---|---|---|---|
-| **AMAYA Core** | 15 | The holding platform + agency stack — **Craig / AMAYA's own repos, not partner-owned.** | [`Attohdigital`](https://github.com/ATTOH-DIGITAL/Attohdigital) — Craig's/AMAYA's agency repo: sites, verticals, Snap Suite · [`brg-operations`](https://github.com/ATTOH-DIGITAL/brg-operations) — AI agent platform, App Builder, data layer |
-| **Pharoah Technology** | 71 | 50/50 Craig + Phil Pereira. Consumer apps, the Forge suite, B2B intelligence. See the showcase below. | [`pharoah-tech`](https://github.com/ATTOH-DIGITAL/pharoah-tech) (portfolio hub) |
-| **BLACKLINE** | 7 | Operational intelligence for close protection. GhostWire is its field-comms layer. | [`blackline-runtime`](https://github.com/ATTOH-DIGITAL/blackline-runtime) |
+| **AMAYA Core** | 13 | The holding platform + agency stack — **Craig / AMAYA's own repos, not partner-owned.** | [`Attohdigital`](https://github.com/ATTOH-DIGITAL/Attohdigital) — Craig's/AMAYA's agency repo: sites, verticals, Snap Suite · [`brg-operations`](https://github.com/ATTOH-DIGITAL/brg-operations) — AI agent platform, App Builder, data layer |
+| **Pharoah Technology** | 72 | 50/50 Craig + Phil Pereira. Consumer apps, the Forge suite, B2B intelligence. See the showcase below. | [`pharoah-tech`](https://github.com/ATTOH-DIGITAL/pharoah-tech) (portfolio hub) |
+| **BLACKLINE** | 17 | Operational intelligence for close protection. Includes the **GhostWire suite — built out and running**, with its secure comms, storage, identity and policy services live on `ghostwire.co.uk`. | [`blackline-runtime`](https://github.com/ATTOH-DIGITAL/blackline-runtime) · [`GhostWire`](https://github.com/ATTOH-DIGITAL/GhostWire) |
 | **Arkhitekton** | 1 | Michael Morrison + Chris Baldwin partner cluster — energy + construction. | [`arkhitekton`](https://github.com/ATTOH-DIGITAL/arkhitekton) |
-| **Reference** | 3 | Forked OSS kept for reference — **not our IP**, excluded from any asset/white-label claim. | `worldmonitor`, `Open-Generative-AI` |
+| **Reference** | 1 | Kept for reference — **not our IP**, excluded from any asset/white-label claim. | `demo-repository` (archived) |
+| *Untagged* | 7 | Not yet carrying a `venture-*` topic — tag them and they move into a row above. | — |
 
 **Rule of thumb for anyone touching this estate:** a repo's *name* doesn't tell you what venture it belongs to or whether it's real, shipped software vs. a doc/landing page vs. a scaffold — check its GitHub topics or the catalogue before assuming. Several `-os`-suffixed repos are marketing pages, not products; several single-purpose Pharoah repos are one file. Don't guess from the name.
 
@@ -26,23 +29,23 @@
 
 ## Pharoah Technology — the Forge suite
 
-*(Phil's team's own showcase, kept as-is — this is the model other ventures should match for their own front door.)*
+*(Phil's team's own showcase — this is the model other ventures should match for their own front door.)*
 
 **Ancient Vision · Future Intelligence** — a suite of focused AI tools for founders, agencies and small businesses. Each tool does one job fast — clean web app, no learning curve.
 **→ [pharoahtechnology.co.uk](https://pharoahtechnology.co.uk)**
 
 | Tool | What it does |
 |---|---|
-| **[BrandForge](https://brandforge.craig-45c.workers.dev)** | One prompt → a complete brand kit: logo directions, colour system, type pairing, voice, taglines. |
-| **[ContentForge](https://contentforge.craig-45c.workers.dev)** | Paste one long-form piece → 12 platform-native posts in one pass. |
-| **[InvoiceForge](https://invoiceforge.craig-45c.workers.dev)** | Generate clean, professional invoices in seconds. |
-| **[LinkedInForge](https://linkedinforge.craig-45c.workers.dev)** | Turn your work into a week of LinkedIn posts that sound like you. |
-| **[HireForge](https://hireforge.craig-45c.workers.dev)** | Job specs, screening and structured shortlists for lean teams. |
-| **[ListingForge](https://listingforge.craig-45c.workers.dev)** | Marketplace product listings that convert, generated fast. |
-| **[ProposalForge](https://proposalforge.craig-45c.workers.dev)** | Client proposals drafted from a short brief. |
-| **[Aegis](https://aegis.craig-45c.workers.dev)** | Privacy-preserving age-assurance & AI-safety guardrail for agent and chat products. |
-| **[Sol AI Gateway](https://sol-ai-gateway.craig-45c.workers.dev)** | Compliance-first LLM gateway — route any model through one API with guardrails and logging. |
-| **[CostaShop](https://costashop.craig-45c.workers.dev)** | AI storefront + listings engine for Costa del Sol businesses. |
+| **[BrandForge](https://brandforge.pharoahtechnology.com)** | One prompt → a complete brand kit: logo directions, colour system, type pairing, voice, taglines. |
+| **[ContentForge](https://contentforge.pharoahtechnology.com)** | Paste one long-form piece → 12 platform-native posts in one pass. |
+| **[InvoiceForge](https://invoiceforge.pharoahtechnology.com)** | Generate clean, professional invoices in seconds. |
+| **[LinkedInForge](https://linkedinforge.pharoahtechnology.com)** | Turn your work into a week of LinkedIn posts that sound like you. |
+| **[HireForge](https://hireforge.pharoahtechnology.com)** | Job specs, screening and structured shortlists for lean teams. |
+| **[ListingForge](https://listingforge.pharoahtechnology.com)** | Marketplace product listings that convert, generated fast. |
+| **[ProposalForge](https://proposalforge.pharoahtechnology.com)** | Client proposals drafted from a short brief. |
+| **[Aurora Guard](https://aegis.pharoahtechnology.com)** | Privacy-preserving age-assurance & AI-safety guardrail for agent and chat products. |
+| **[Anaïs AI Gateway](https://gateway.pharoahtechnology.com)** | Compliance-first LLM gateway — route any model through one API with guardrails and logging. |
+| **[CostaShop](https://costashop.pharoahtechnology.com)** | AI storefront + listings engine for Costa del Sol businesses. |
 
 Full Pharoah catalogue + live pricing: **[pharoahtechnology.co.uk](https://pharoahtechnology.co.uk)**. This is one venture inside the wider AMAYA estate above — the rest of the org is not Pharoah's.
 
