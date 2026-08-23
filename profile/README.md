@@ -4,9 +4,9 @@
 
 ### The parent org — every venture, one place
 
-**111 repos across 5 ventures.** If you're new here (coder, partner, or reviewing the estate): this page is the map. Full repo-by-repo detail with GitHub topics on every repo (`venture-*` / `type-*` / `status-*`, filterable via `topic:venture-pharoah-tech` etc. in org search) lives in the internal audit catalogue — ask for access if you don't have it.
+**113 repos across 5 ventures.** If you're new here (coder, partner, or reviewing the estate): this page is the map. Full repo-by-repo detail with GitHub topics on every repo (`venture-*` / `type-*` / `status-*`, filterable via `topic:venture-pharoah-tech` etc. in org search) lives in the internal audit catalogue — ask for access if you don't have it.
 
-<sub>Counts and links below verified against live GitHub topics and the product register on <strong>20 Aug 2026</strong>.</sub>
+<sub>Counts and links below verified against live GitHub topics and the product register on <strong>23 Aug 2026</strong>.</sub>
 
 </div>
 
@@ -21,7 +21,7 @@
 | **BLACKLINE** | 17 | Operational intelligence for close protection. Includes the **GhostWire suite — built out and running**, with its secure comms, storage, identity and policy services live on `ghostwire.co.uk`. | [`blackline-runtime`](https://github.com/ATTOH-DIGITAL/blackline-runtime) · [`GhostWire`](https://github.com/ATTOH-DIGITAL/GhostWire) |
 | **Arkhitekton** | 1 | Michael Morrison + Chris Baldwin partner cluster — energy + construction. | [`arkhitekton`](https://github.com/ATTOH-DIGITAL/arkhitekton) |
 | **Reference** | 1 | Kept for reference — **not our IP**, excluded from any asset/white-label claim. | `demo-repository` (archived) |
-| *Untagged* | 7 | Not yet carrying a `venture-*` topic — tag them and they move into a row above. | — |
+| *Untagged* | 9 | Not yet carrying a `venture-*` topic — tag them and they move into a row above. | — |
 
 **Rule of thumb for anyone touching this estate:** a repo's *name* doesn't tell you what venture it belongs to or whether it's real, shipped software vs. a doc/landing page vs. a scaffold — check its GitHub topics or the catalogue before assuming. Several `-os`-suffixed repos are marketing pages, not products; several single-purpose Pharoah repos are one file. Don't guess from the name.
 
